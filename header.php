@@ -14,6 +14,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 </head>
@@ -24,23 +25,11 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$minimalist_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $minimalist_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $minimalist_theme_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-text.png" alt="Glasgow Bike Store logo" />
+			</a>
 		</div><!-- .site-branding -->
-
+        <span class="phone">Tel: 0141 123 4567</span>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'minimalist-theme' ); ?></button>
 			<?php

@@ -13,18 +13,21 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+        <a class="footer-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Bike Store logo" />
+        </a>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'minimalist-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'minimalist-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'minimalist-theme' ), 'minimalist-theme', '<a href="https://carmemias.com">carmemias</a>' );
-				?>
+            <span>Tel: 0141 123 4567</span>
+			<a href="https://facebook.com/glasgowbikestore">
+                <span class="icon">
+                <i class="fab fa-facebook fa-2x"></i>
+                </span>
+            </a>
+            <a href="https://twitter.com/glasgowbikestore">
+                <span class="icon">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </span>
+            </a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

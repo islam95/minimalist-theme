@@ -13,7 +13,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary">
 		<main id="main" class="site-main">
 
 		<?php
@@ -34,6 +34,15 @@ get_header();
 				get_template_part( 'template-parts/content', '' );
 
 			endwhile;
+
+            if (is_home() || is_front_page()) :
+                ?>
+                <div>
+                    Hello there
+                </div>
+
+            <?php
+            endif;
 
 		else :
 

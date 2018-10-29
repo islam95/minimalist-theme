@@ -79,17 +79,6 @@ body {
 /*--------------------------------------------------------------
 * Structure
 --------------------------------------------------------------*/
-.main-navigation {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-}
-
-.admin-bar .main-navigation {
-	top: 32px;
-}
 
 .site-content {
 	display: -webkit-box;
@@ -103,6 +92,7 @@ body {
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding: 3%;
+	clear: both;
 }
 
 .content-area {
@@ -117,12 +107,18 @@ body {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.site-header{
+	background-color: #e3e3e3;
+	height: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10%;
+	padding-right: 5%;
+}
 .site-branding {
-	margin-top: 40px;
-	width: 100%;
-	padding: 3% 0;
-	text-align: center;
-	background-color: #ececec;
+	width: 40%;
+	float: left;
+	padding-top: 20px;
 }
 
 .wp-admin .site-branding {
@@ -141,11 +137,11 @@ body {
 /* Navigation */
 
 .main-navigation {
-	background-color: #333;
-	clear: both;
-	color: #eee;
-	display: block;
-	width: 100%;
+	float: right;
+	width: 285px;
+	position: relative;
+	top: 80px;
+	right: auto;
 }
 
 .main-navigation ul {
@@ -179,7 +175,6 @@ body {
 }
 
 .main-navigation a {
-	color: #eee;
 	display: block;
 	padding: 10px;
 	text-decoration: none;
@@ -234,10 +229,11 @@ body {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	background-color: #333;
 	color: #eee;
-	padding: 1%;
-	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .site-footer a {
@@ -296,3 +292,56 @@ body {
 		margin-left: 0;
 	}
 }
+
+
+/* New styles */
+
+body{
+	color: #5d5d5d;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #fe951c;
+}
+
+a{
+	color: #067add;
+}
+
+a:hover, a:focus{
+	color: #fe951c;
+}
+
+.site-footer {
+	background-color: #5d5d5d;
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-branding img{
+	width: 360px;
+	height: 100px;
+}
+
+.site-footer img {
+	width: 100px;
+	height: 100px;
+}
+
+.site-info {
+	display: flex;
+	align-items: center;
+}
+
+.site-info > * {
+	padding-left: 20px;
+}
+
+.phone {
+	float: right;
+	position: relative;
+	top: 30px;
+	right: 150px;
+}
+
+
