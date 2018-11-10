@@ -83,11 +83,11 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Minimalist Theme"
+msgid "WP bikes store project"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://github.com/carmemias/minimalist-theme"
+msgid "https://github.com/islam95/wp-project"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -95,9 +95,9 @@ msgid "A minimalist theme for the Code Your Future WordPress module exercises."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "carmemias for Code Your Future"
+msgid "Islam Dudaev for Code Your Future"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://carmemias.com"
+msgid "https://islamdudaev.ru"
 msgstr ""
